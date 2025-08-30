@@ -34,4 +34,7 @@ urlpatterns = [
 
     #dashboards url
     path('dashboard/',include('dashboards.urls')),
+
+    #author
+    path('author/',views.author,name='author'),
 ] + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

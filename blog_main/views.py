@@ -63,3 +63,6 @@ def login(request):
 def logout(request):
     auth.logout(request)
     return redirect('home')
+
+def author(request):
+    return render(request,'author.html')
